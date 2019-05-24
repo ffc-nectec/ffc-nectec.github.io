@@ -8,7 +8,7 @@ install:
    - bundle install
 script:
   - jekyll build
-  - htmlproofer ./_site --check-html
+  - htmlproofer ./_site --check-html --allow-hash-href
 env:
   global:
     -NOKOGIRI_USE_SYSTEM_LIBRARIES=true
