@@ -5,6 +5,7 @@ jdk: openjdk8
 install:
    - gem update --system
    - gem --version
+   - rm Gemfile.lock
    - bundle install
    - gem install html-proofer
 script:
